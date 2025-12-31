@@ -232,9 +232,65 @@ html {
     width: 100%;
     height: 90vh;
     position: relative;
+
+    .landing-img {
+        width: 92%;
+        height: 70vh;
+        position: absolute;
+        top: 11rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 60%;
+        }
+    }
+
+    .banner {
+        position: absolute;
+        bottom: 15rem;
+        left: 20rem;
+
+        .banner-heading {
+            font-size: 9rem;
+            color: #fff;
+
+            span {
+                font-size: 9rem;
+                color: #ffbb00;
+                letter-spacing: .5rem;
+            }
+        }
+
+        .banner-content {
+            display: flex;
+            align-items: center;
+
+            p {
+                width: 45rem;
+                font-size: 2rem;
+                color: #fff;
+                margin-right: 2rem;
+            }
+
+            button {
+                width: 15rem;
+                height: 5rem;
+                background-color: transparent;
+                border: .3rem solid #fff;
+                color: #fff;
+                font-size: 1.6rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }   
 }
 
-.landing-img {
+/* .landing-img {
     width: 92%;
     height: 70vh;
     position: absolute;
@@ -288,7 +344,7 @@ html {
     font-size: 1.6rem;
     font-weight: bold;
     cursor: pointer;
-}
+} */
 
 .about {
     width: 100%;
@@ -367,4 +423,125 @@ html {
 .section-bottom h3 {
     font-size: 2.5rem;
     color: #fff;
+}
+
+.my-minecraft-builds {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.minecraft-build-heading {
+    font-size: 8rem;
+    color: #fff;
+    letter-spacing: .2rem;
+    margin: 7rem 0 10rem 9rem;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.card {
+    width: 32rem;
+    height: 50rem;
+    margin-right: 2.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color .6s;
+}
+
+.card:hover .card-content {
+    background-color: rgba(0,0,0,.9);
+}
+
+.card-content::before {
+    content: "";
+    width: 92%;
+    height: 0.1rem;
+    background-color: #ffbb00;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform .8s;
+}
+
+.card:hover .card-content::before {
+    transform: scale(1);
+}
+
+.card-content::after {
+    content: "";
+    width: .1rem;
+    height: 94%;
+    background-color: #ffbb00;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    transform: scale(0);
+    transform-origin: top; 
+    transition: transform .8s;
+}
+
+.card:hover .card-content::after {
+    transform: scale(1);
+}
+
+
+.card-content h1 {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    width: 15rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.card:hover .card-content h1 {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s .6s;
+}
+
+.card-content p {
+    font-size: 1.6rem;
+    color: #fff;
+    position: absolute;
+    top: 13rem;
+    left: 4rem;
+    width: 17rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.card:hover .card-content p {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s .6s;
+}
+
+.designs {
+    right: 12rem;
 }
