@@ -544,6 +544,10 @@ html {
 
 .designs {
     right: 12rem;
+    
+    i {
+        color: #ff0033;
+    }
 }
 
 .footer {
