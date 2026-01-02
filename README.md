@@ -1,13 +1,16 @@
 # 🌐 Website Design for Kianic MC 
-  ![Static Badge](https://img.shields.io/badge/%F0%9F%94%97%20Click%20Here%20for%20Live--Preview%20of%20the%20Website-grey?style=plastic)
+  [![KianixYT][1]][2]
+  
+  [1]:  https://img.shields.io/badge/%F0%9F%94%97%20Click%20Here%20for%20Live--Preview%20of%20the%20Website%20Deployed%20through%20Vercel%20%E2%96%B2-000?style=plastic
+  [2]:  https://website-design-for-kianix.vercel.app 
 
 ## ⛏️ Who is Kianix
 Kianix is a [Minecraft YouTuber](https://www.youtube.com/@Kianix-mc), whom I've taken inspiration in creating this website.
 <br><br>
-  [![KianixYT][1]][2]
+  [![KianixYT][3]][4]
 
-[1]:  ./resources/imgs-readme/kianix-yt-screenshot.png
-[2]:  https://www.youtube.com/@Kianix-mc
+[3]:  ./resources/imgs-readme/kianix-yt-screenshot.png
+[4]:  https://www.youtube.com/@Kianix-mc
 
 <br>
 
@@ -23,4 +26,4 @@ Kianix is a [Minecraft YouTuber](https://www.youtube.com/@Kianix-mc), whom I've 
   ![Static Badge](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel)
 <br><br>
 ___
-All Credits to Kianix
+All Credits goes to to Kianix
